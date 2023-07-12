@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center;height: 10px;"><h1>BTS Photo Gallery</h1></div>
+    <div class="photo-gallery">
+        <img src="images/image1.png" onclick="openFullImg(this.src,this.id)" id="pic1">
+        <img src="images/image2.jpg" onclick="openFullImg(this.src,this.id)" id="pic2">
+        <img src="images/image 3.jpg" onclick="openFullImg(this.src,this.id)" id="pic3">
+        <img src="images/image4.jpg" onclick="openFullImg(this.src,this.id)" id="pic4">
+        <img src="images/image5.jpg" onclick="openFullImg(this.src,this.id)" id="pic5">
+        <img src="images/image6.jpg" onclick="openFullImg(this.src,this.id)" id="pic6">
+        <img src="images/image7.jpg" onclick="openFullImg(this.src,this.id)" id="pic7">
+        <img src="images/image8.jpg" onclick="openFullImg(this.src,this.id)" id="pic8">
+        <img src="images/image9.jpg" onclick="openFullImg(this.src,this.id)" id="pic9">
+        <img src="images/image10.jpg" onclick="openFullImg(this.src,this.id)" id="pic10">
+        <img src="images/image11.jpg" onclick="openFullImg(this.src,this.id)" id="pic11">
+        <img src="images/image12.jpg" onclick="openFullImg(this.src,this.id)" id="pic12">
+    </div>
+    <div class="full-div">
+        <div class="full-photo">
+            <img src="images/image1.png" id="fullpic">
+        </div>
+    </div>
+    <script>
+        var fullpic = document.getElementById('fullpic');
+        function openFullImg(pic,picid)
+        {
+            fullpic.src = pic;
+            // var photo = document.getElementById(`${picid}`);
+            // photo.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>
